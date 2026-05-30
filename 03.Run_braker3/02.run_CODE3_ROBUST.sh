@@ -176,6 +176,7 @@ echo "Running BRAKER1 (BAM Only)..."
     --species=${TARGET_ID}_rna \\
     --gff3 \\
     --softmasking \\
+    --fungus \\
     --AUGUSTUS_CONFIG_PATH=\$TARGET_CONFIG
 EOF
     chmod +x "$SCRIPT_RNA"
@@ -238,6 +239,7 @@ echo "Running BRAKER2 (Protein Only)..."
     --species=${TARGET_ID}_prot \\
     --gff3 \\
     --softmasking \\
+    --fungus \\
     --AUGUSTUS_CONFIG_PATH=\$TARGET_CONFIG
 EOF
 chmod +x "$SCRIPT_PROT"
